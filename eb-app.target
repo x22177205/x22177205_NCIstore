@@ -1,0 +1,6 @@
+[Unit]
+Description=EB App
+
+[Install]
+WantedBy=multi-user.target
+
