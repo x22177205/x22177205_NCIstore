@@ -25,7 +25,7 @@ SECRET_KEY = 'z+ksf@)0d^qojbh4rnp4b1to$hq&*tt(3bs$gf(3i267g$k9ln'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', 'NCIstore-env.eba-g2pdhwem.us-west-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['*']
 
 
 
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
     }
 }
 
